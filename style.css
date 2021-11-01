@@ -14,6 +14,7 @@ body {
   );
   background-size: cover;
   color: #bb4848;
+  width: 100vw;
   height: 100vh;
   overflow-y: hidden;
   background-repeat: no-repeat;
@@ -111,12 +112,12 @@ body {
   body {
     height: 120vh;
     width: 100vw;
-    overflow-x: hidden;
   }
   .boxes {
     display: flex;
     flex-direction: column-reverse;
     height: 120vh;
+    overflow-x: hidden;
   }
   .photo {
     background: url(img/hero-mobile.jpg);
