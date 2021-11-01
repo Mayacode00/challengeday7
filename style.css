@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 14%,
+    rgb(253, 221, 221) 38%,
+    rgba(255, 255, 255, 1) 63%,
+    rgb(250, 185, 185) 95%
+  );
+  background-size: cover;
+  color: #bb4848;
+  height: 100vh;
+  overflow-y: hidden;
+  background-repeat: no-repeat;
+}
+.boxes {
+  display: flex;
+  height: 100%;
+}
+.column-boxes {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.base-apparel {
+  font-family: josefin sans;
+  font-size: 40px;
+  margin-left: 90px;
+}
+.note {
+  text-align: left;
+  height: 100vh;
+  margin: 90px;
+}
+.first-note {
+  font-family: Josefin Sans;
+  font-weight: thin;
+  text-transform: uppercase;
+  font-size: 90px;
+}
+.second-note {
+  font-family: "Nunito Sans", sans-serif;
+  text-transform: uppercase;
+  color: #333333;
+  font-size: 120px;
+  letter-spacing: 9px;
+}
+.third-note {
+  font-family: "josefin Sans";
+  font-size: 15px;
+  font-weight: thin;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+}
+.fillings {
+  background: transparent;
+  border: 1px solid #bb4848;
+  margin-top: 35px;
+  width: 400px;
+  height: 45px;
+  border-radius: 15px;
+}
+.photo {
+  background: url(img/hero-desktop.jpg);
+  width: 70%;
+  height: 100vh;
+}
+/* pseudo element */
+.first-note,
+.base-apparel,
+.second-note,
+.third-note:hover {
+  cursor: default;
+}
+@media screen and (max-width: 1024px){
+    .boxes{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+    .base-apparel{
+        width: 70px;
+        height: 0;
+    }
+    .photo{
+        background: url(img/hero-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        margin-top: 50px;
+    }
+    .note{
+        height: 40vh;
+        text-align: center;
+    }
+    .first-note{
+        font-size: 45px;
+    }
+    .second-note{
+      font-size: 80px;
+    }
+}
+@media screen and (max-width: 500px) {
+  body {
+    height: 120vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .boxes {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 120vh;
+  }
+  .photo {
+    background: url(img/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 60vh;
+    width: 120vw;
+    margin-top: 50px;
+  }
+  .base-apparel {
+    font-size: 20px;
+    width: 40px;
+    margin: 30px;
+  }
+  .note {
+      margin-top: 90px;
+    text-align: center;
+    margin: 30px;
+  }
+  .first-note {
+    font-size: 40px;
+  }
+  .second-note {
+    font-size: 60px;
+  }
+  .third-note {
+    font-size: 10px;
+  }
+  .fillings {
+    width: 300px;
+  }
+}
