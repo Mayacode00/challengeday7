@@ -32,6 +32,7 @@ body {
   font-family: josefin sans;
   font-size: 40px;
   margin-left: 90px;
+  color: #333333;
 }
 .note {
   text-align: left;
@@ -39,20 +40,20 @@ body {
   margin: 90px;
 }
 .first-note {
-  font-family: Josefin Sans;
-  font-weight: thin;
+  font-family: 'Nunito Sans';
+  font-weight: lighter;
   text-transform: uppercase;
   font-size: 90px;
 }
 .second-note {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: 'Gotu', sans-serif;
   text-transform: uppercase;
   color: #333333;
   font-size: 120px;
   letter-spacing: 9px;
 }
 .third-note {
-  font-family: "josefin Sans";
+  font-family: 'Gotu', sans-serif;
   font-size: 15px;
   font-weight: thin;
   word-spacing: 2px;
